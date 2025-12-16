@@ -1,0 +1,13 @@
+.test{
+    height: 200px;
+    width: 200px;
+    background-color: lightseagreen;
+    color: yellow;
+    border: 5px dotted white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 200px;
+    position: relative;
+    left: 50%;
+    font-size: 32px;
+}
