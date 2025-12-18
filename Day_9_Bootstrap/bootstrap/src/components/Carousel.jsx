@@ -1,4 +1,8 @@
-import React from 'react'   
+import React from 'react' ;
+import img1 from '../assets/images/img1.jpg';
+import img2 from '../assets/images/img2.jpg';
+import img3 from '../assets/images/img3.jpg';
+
 
 function Carousel() {
   return (
@@ -12,13 +16,13 @@ function Carousel() {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src="..." className="d-block w-100" alt="..." height="400"/>
+      <img src={img1} className="d-block w-100" alt="img1" height="400"/>
     </div>
     <div className="carousel-item">
-      <img src="..." className="d-block w-100" alt="..." height="400"/>
+      <img src={img2} className="d-block w-100" alt="img2" height="400"/>
     </div>
     <div className="carousel-item">
-      <img src="..." className="d-block w-100" alt="..." height="400"/>
+      <img src={img3} className="d-block w-100" alt="img3" height="400"/>
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
