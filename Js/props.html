@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Props</title>
+</head>
+
+<body>
+
+
+    <script>
+        // Array/object destructing
+        // map method
+        // functions
+        // callbackfucntion
+        // join method
+
+
+        function add(a, b) {
+            console.log('im the add function');
+            console.log(a + b);
+
+
+        }
+        add(2, 3)
+
+        //callback function
+        function Parent(callback) {
+            console.log('Im the Parent');
+            callback();
+
+
+        }
+
+        function Child() {
+            console.log('Im the child');
+
+        }
+        Parent(Child)
+
+        //
+        let list = ['Helen', 23, true, undefined, 'Hello all'];
+        console.log(list);
+        console.log(list[0]);
+
+
+        let [a, b, c, d, e] = list;
+        console.log(a);
+        console.log(b);
+
+        console.log(c);
+
+        console.log(d);
+
+        console.log(e);
+
+        //Object
+
+        let data = {
+            name: 'Tarannum',
+            course: 'React',
+            Mode: 'online'
+        }
+
+        console.log(data);
+        console.log(data.name);
+
+
+        let { name, course, Mode } = data;
+        console.log(name);
+
+        console.log(course);
+
+        console.log(Mode);
+
+
+        //map
+        let products = [
+            { id: 1, name: 'Mobile', price: 2500 },
+            { id: 2, name: 'Mobile', price: 2500 },
+            { id: 3, name: 'Mobile', price: 2500 },
+            { id: 4, name: 'Mobile', price: 2500 },
+
+
+        ]
+
+
+        products.map(item =>{
+            console.log(item.id);
+            console.log(item.name);
+            console.log(item.price);
+            
+            
+            
+        })
+
+        //join
+        let fruits =['Apple', 'Mango','Grapes','kiwi'];
+        console.log(fruits.join(', '));
+        
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
