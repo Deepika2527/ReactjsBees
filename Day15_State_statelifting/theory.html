@@ -1,0 +1,120 @@
+<!-- 
+useState – Theory Flow
+
+State is a special variable in React that belongs to a component.
+It is used to store data that can change over time and automatically update the UI when the value changes.
+
+In normal JavaScript, if we use a variable like let count = 0, the value can change but the UI will not update.
+React does not track normal variables.
+
+To solve this problem, React provides useState.
+
+With useState, React:
+
+Stores the value internally
+
+Watches for changes
+
+Re-renders the component when the value updates
+Syntax of useState
+const [initialValue, updateValue] = useState("value");
+
+State is commonly used for:
+
+Counters,
+Form inputs,
+Login status,
+Cart count,
+Toggle (show / hide)
+
+How State Changes (Example Concept)
+
+State can increase or decrease like:
+
+0 → 1 → 2 → 3 → 4 → 5
+5 → 4 → 3 → 2 → 1 → 0 → -1
+
+Each time the state value changes, React updates the UI automatically.
+
+useState Syntax – Conceptual Explanation
+
+useState returns two values:
+
+The current state value
+
+A function to update the state
+
+The first value is used to read the state.
+The second value is used to change the state.
+
+The value passed inside useState() is called the initial value.
+
+Important Rules of useState
+
+State should never be updated directly
+Always use the update function
+Updating state causes re-rendering
+State updates are asynchronous
+Each component manages its own state
+
+State Lifting – Theory Flow
+
+State Lifting means moving state from a Parent component to a Child component.
+
+Instead of keeping separate states in multiple components, we keep one common state in the parent and share it with children.
+
+This is done when:
+
+Multiple components need the same data
+
+One component updates data and another displays it
+
+Child-to-child communication is required
+
+Why State Lifting is Needed
+
+In React:
+
+Data flows only in one direction
+
+Parent → Child is allowed
+
+Child → Child is NOT allowed directly
+
+To share data between children:
+
+State is placed in the parent
+
+Parent passes data to children using props
+
+Children can update the parent state using callback functions
+State Lifting Flow (Concept)
+
+Parent component:
+
+Holds the state
+
+Controls the data
+
+Passes state to children
+
+Child components:
+
+Receive data as props
+
+Trigger updates through parent functions
+
+This ensures:
+
+Single source of truth
+
+Better control
+
+Clean data flow
+
+
+
+
+
+
+-->
