@@ -1,10 +1,14 @@
 import React from 'react'
-import SignUp from './components/SignUp'
+import Sigining from './components/Sigining'
+// import SignUp from './components/SignUp'
+
 
 function App() {
   return (
     <div>
-      <SignUp/>
+      {/* <SignUp/> */}
+      <Sigining/>
+      
     </div>
   )
 }
