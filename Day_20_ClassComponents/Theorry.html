@@ -1,0 +1,109 @@
+<!-- 
+ ClassComponents-
+ A class component is a way to create a component using a Js class instead of function
+
+ A componnet is reauble UI
+ BUTTON
+ Nav
+ Header
+ Footer
+ Cards
+
+
+ Import Points
+ import {Components}
+
+
+ class Welcome extends Component
+ {
+ 
+ render() - render the UI {
+  return //code  - JSX-UI
+ 
+ }
+ 
+ 
+ }
+
+ export default Welcome
+
+Without render a class compinet cant work
+
+
+Why dow e need class Compoents
+1.Store the data - state
+2. Handle LifeCycle Events
+3. Better control -earlier days
+
+
+render()
+This is like a camera where it takes pic of the UI on each update of the Props/state
+
+
+Constructor-Its is aspecial method thats runs first when the class component is created.
+This is used to initilasie the state and bind the methods
+
+ex to hadle 
+Construtor(props){
+super(props);
+this.state =  {
+count =0;
+name = "Deepika"
+
+}
+}
+
+super Keyword:
+Used to call the constructor and methods of the parent class
+
+
+ParentClass - Component
+Child Class- Componet we have created
+
+LifeCycle
+
+Mounting: When a component is created and added into the Dom
+Order Exection
+    Constructor():
+        To initalis the state/ bind the events
+        to acess this using spuper(props)
+
+    render()-
+        Its returns the JSX
+        UI waht shul appear
+
+
+static getDervidedStateFromProps()
+        sync state with props
+        this is static
+        compare the props and the state
+componentDidMount()
+        Runs after the componet is added to the dom
+
+
+
+
+UpdatingPhase
+
+
+0rder oF Execution
+        Static getDerviedStateFromProps()
+            Check the props the props- state will be syn again
+            Run oneveryUpdate
+ShouldComponentUpdate()
+true- renders
+flase -stop render
+
+render()
+same likebefore
+getSnapShotBeforeUpdate()
+Cpatures the preious dom state
+componentDidMoutn()
+
+Runs after the dom updates
+
+
+
+Unmounting
+    componentwillUnount()
+-->

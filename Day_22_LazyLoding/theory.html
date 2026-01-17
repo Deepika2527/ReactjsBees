@@ -1,0 +1,53 @@
+<!-- 
+ 
+LazyLoading: 
+Lazy loading means loading a component only when it is required, instead of loading all components at the beginning.
+In React:
+
+Components are JavaScript files
+
+Loading everything at once makes the app slow
+
+Lazy loading improves performance
+Without Lazy Loading
+
+All components load at once
+
+Initial page load is slow
+
+Large bundle size
+
+Poor user experience
+
+ With Lazy Loading
+
+Only needed components load first
+
+Faster initial loading
+
+Better performance
+
+Smooth user experience
+
+
+Step 1:
+Lazy
+suspense
+
+
+import {lazy, Suspense} from react
+
+Step 2:
+const ContactForm = lazy(()=>import('./CompontentName'))
+
+
+
+step 3:
+<Supsense fallback={}>
+
+<ContactForm/>
+
+    <Suspense/>
+
+
+-->
