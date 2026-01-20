@@ -1,0 +1,56 @@
+<!-- 
+ 
+useReducer() ? This is a react hook, helps in managing the state
+
+useState - React Hook, Mnage the state.
+
+
+const[count,setCounter] = useState(initial value)
+
+count -> initial
+onclick-> setCounter  will updated -> state
+
+
+const[cart,addtocart]  = useState([])
+
+increment function to increnet the cart count
+decreemnt function to decre the count
+
+
+
+
+useReducer() - 
+
+const[state,dispatch] = useReducer(function, initial_state);
+
+
+
+useReducer main 3 things
+state - current state- 0, [], true
+dispatch - action - incr/dec/reset..
+function - 2 values currentState, action return a new state
+
+
+function function_name(currentstate, action){
+
+retuns a new state
+
+}
+
+
+step 1: When the componet wants to update the state dispatch an action
+step 2: action will goes to the reducefunction
+step 3: the reduce function will check for the action
+step 4: based n the action the new state is returned
+step 5: Then the Ui will be updated
+
+
+
+dispatch{type: 'action'
+
+payload:'hold the value'}
+
+
+
+
+-->
