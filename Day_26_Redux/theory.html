@@ -1,0 +1,77 @@
+<!-- 
+
+Redux: 
+statemanagement
+Used large scaled application
+
+1. state:  state is the data of the applic stored in redux
+
+synatx: const intialstate = {
+count : 0
+
+}
+
+2.action: sent to the reducer
+{type: incremnet}
+3.dispatch() : dispacth send an action to redux
+
+dipatch(action)
+4. store: brain of the redux , import this into main.jsx
+Hold the entire Redux state
+configureStore({
+redcure
+
+})
+5. provider: Makes ythe redux store avaibale yo react components
+<provide store = "">
+</provider>
+
+
+6.useSelector() - reads the data from the reducstore
+
+useSelector ((state)=>state.somevalue)
+
+7.useDispatch(): gives acees to the dispatch function
+
+const diaptch = useDispatch
+<btn onclick = {()=>dispatch(in)}> inc </btn>
+
+
+
+8. createSlice():  createSlice){
+         name: counter,
+         initialstate : 0 , "hello",
+         reducers:function(state,action){
+         
+         
+         
+         }
+
+
+
+
+}
+
+
+install redux toolkit
+install react redux
+
+
+
+Flow
+Ui clicked -> dispatch(action) -> reducer runs -> state updated in the store->useSelector will read newsstate->Ui renders
+
+
+let [count,setCounter] = useState('initial')
+let [count,dispatch] = useRedcucer(function,initial)
+
+
+
+
+ 
+
+
+
+
+
+-->

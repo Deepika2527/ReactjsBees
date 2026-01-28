@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: aliceblue;
+}
+/* navsection */
+   .navSection{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color : #ccc;
+    height: 80px;
+    align-items: center;
+    padding: 0 40px;
+   }
+
+   .subMenu{
+    background-color: grey;
+    color: azure;
+    height: 50px;
+    padding: 10px 0;
+   }
+   .subMenu ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    
+   }
+   .subMenu ul li{
+    list-style: none;
+    margin: 10px;
+    margin-top: 10px;
+    
+   }
+.proTitle h2{
+    margin: 10px;
+}
+.proSection{
+    display: flex;
+    background-color: white;
+}
+ .imgBox{
+    /* border: 1px solid red; */
+    width: 80%;
+}
+.proImg{
+/* border: 2px solid green; */
+width: 80%;
+} 
